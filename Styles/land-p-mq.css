@@ -1,0 +1,219 @@
+@media (max-width: 1024px) {
+    header .socials > ion-icon {
+        width: 20px ;
+        height: 20px ;
+    }
+
+    header .socials img {
+        width: 20px ; 
+        height: 20px ;
+    }
+
+    .navigation .tooltip {
+        right: 25% ;
+    }    
+
+    .gallery {
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    footer .legend {
+        padding: 0 5rem ;
+    }
+
+    .slider {
+        height: 530px ;
+        width: 450px; 
+    }
+
+    .carrousel img {
+        height: 500px ;
+    }
+    /*--  header nav { //Para barra de navegacion 
+        font-size: 20px ;
+    } --*/ 
+}
+
+@media (max-width: 875px) {
+    .navigation .tooltip {
+        right: 20% ;
+    }    
+
+    .navigation .tooltip::after {
+        left: 25% ;
+    }
+
+    .gallery {
+        grid-template-columns: 47% 47% ;
+        column-gap: 2rem ;
+    }
+    
+    footer .legend {
+        padding: 0 4rem ;
+    }
+
+    footer .socials-footer {
+        padding: 0 4rem ;
+    }
+}
+
+@media (max-width: 769px) {
+    .navigation .tooltip::after {
+        left: 35% ;
+    }
+}
+
+@media (max-width: 695px) {
+    h1 {
+        font-size: 50px ;
+    }
+    
+    header .socials {
+        width: 20% ;
+    }
+
+    footer .legend {
+        padding: 0 2rem ;
+    }
+
+    footer .socials-footer {
+        padding: 0 2rem ;
+    }   
+
+    main .go-top {
+        display: grid ;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr ;
+        row-gap: 60px ;
+        margin-bottom: 100px ;
+    }
+
+    .gallery .marialuisa {
+        display: grid ;
+        width: 300px ;
+        height: auto ;
+        border-radius: 5px ;
+    }
+
+    .gallery img {
+        box-shadow: 0 0 7px #aaa ;
+    }
+
+    .gallery img:hover {
+        box-shadow: none ;
+    }
+
+    .gallery .marialuisa .paragraph {
+        display: block ;
+        font-size: 16px ;
+    }
+}
+
+@media (max-width: 426px) {
+    header .socials {
+        width: 30% ;
+        margin-bottom: 0 ;
+    }
+
+    .navigation .tooltip {
+        right: 10% ;
+        top: 51% ;
+        font-size: 12px ;
+        padding: 5px 10px ;
+    }
+
+    .navigation .tooltip::after {
+        display: none ;
+    }
+
+    .close {
+        position: absolute ;
+        width: 100% ;
+        display: grid ;
+        justify-content: center ;
+        margin: 0 0 30px 0 ;
+        bottom: 0px ;
+    }
+
+    .close::before {
+        content: '' ;
+        width: 35px ;
+        height: 3px ;
+        background: black ;
+        display: grid ;
+        justify-content: center ;
+        transform: translateY(15px) ;
+        cursor: pointer ;
+        transition: 100ms;
+    }
+
+    .close::after {
+        content: '' ;
+        width: 35px ;
+        height: 3px ;
+        background: black ;
+        display: grid ;
+        justify-content: center ;
+        transform: translateY(-10px) ;
+        box-shadow: 0 10px 0 black ; 
+        cursor: pointer ;
+        transition: 100ms;
+
+    }
+
+    .close.open::before {
+        transform: rotate(45deg) translateX(2px) translateY(0) ;
+
+    }
+
+    .close.open::after { /*--Debe ir "ul.open" todo junto para su selección en JS--*/
+        transform: rotate(-45deg) translateX(1px) translateY(0) ;
+        box-shadow: 0 0 0 black ;
+    } 
+
+    .navigation ul {
+        display: grid ;
+        row-gap: 1rem ;
+        padding: 20px 0 40px 0 ;
+        text-align: center ;
+    }
+
+    .navigation ul li {
+        display: none ;
+    }
+
+    .navigation ul li:first-child {
+        margin-top: 20px ;
+    }
+
+    .navigation ul li:last-child {
+        margin-bottom: 35px ;
+    }
+}
+
+@media (max-width: 321px) {
+    header h1 {
+        font-size: 48px ;
+        padding-top: 55px ;
+    }
+
+    .navigation .tooltip {
+        right: 6% ;
+    }
+
+    footer .legend {
+        font-size: 18px ;
+    }
+}
+
+/*
+    footer .socials-footer a {
+        display: flex ;
+    }       
+
+    footer .socials-footer p {
+        display: none ;
+*/
+

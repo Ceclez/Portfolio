@@ -1,0 +1,47 @@
+@media (max-width: 1025px) {
+    #submit {
+        width: 30% ;
+    }
+
+    .container {
+        padding-bottom: 2rem ;
+    }
+
+    .fill-out-fields {
+        bottom: -65px ;
+    }
+
+    .sent-message {
+        bottom: -65px ;
+    }
+}
+
+@media (max-width: 895px) {
+    main {
+        width: 50% ;
+    }
+}
+
+@media (max-width: 540px) {
+    main {
+        width: 70% ;
+    }
+}
+
+@media (max-width: 540px) {
+    main {
+        width: 80% ;
+    }
+}
+
+@media (max-width: 540px) {
+    main {
+        width: 90% ;
+    }
+}
+
+@media (max-width: 321px) {
+    h1 {
+        font-size: 26px ;
+    }
+}

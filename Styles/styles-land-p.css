@@ -1,0 +1,315 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    list-style: none ;
+    text-decoration: none ;
+    box-sizing: border-box ;
+    font-family: sans-serif ;
+}
+
+
+/*----HEADER SECTION----*/
+h1 {
+    text-align: center ;
+    font-size: 60px ;
+    padding: 65px 0 45px 0 ;
+}
+
+header .socials {
+    width: 15% ;
+    margin: 0 auto ;
+    display: flex ;
+    justify-content: space-evenly ;
+    margin-bottom: 10px ;
+}
+
+header .socials > img {
+    width: 26px ;
+    height: 26px ;
+    cursor: pointer ;
+    transition: all 100ms ease-in-out ;
+}
+
+header .socials > ion-icon {
+    width: 26px ;
+    height: 26px ;
+    color: black ;
+    cursor: pointer ;
+    transition: all 100ms ease-in-out ;
+}
+
+header .socials > img:hover {
+    transform: scale(1.1) ;
+    border-radius: 4px ;
+    box-shadow: 0 0 4px #bbb ;
+}
+
+header .socials > ion-icon:hover {
+    transform: scale(1.1) ;
+    border-radius: 4px ;
+    box-shadow: 0 0 4px #bbb ;
+}
+
+
+/*----NAV SECTION----*/
+.navigation {
+    position: -webkit-sticky; 
+    position: sticky ;
+    top: 0 ;
+    box-shadow: 0 3px 3px #aaa;
+    z-index: 50 ;
+}
+
+.navigation ul {
+    display: flex ;
+    justify-content: space-evenly ;
+    padding: 15px ;
+    background: white ;
+}
+
+.navigation ul li a {
+    color: black ;
+    letter-spacing: 1px ;
+    transition: all 100ms ease-in-out ;
+}
+
+.navigation ul li a:hover {
+    color: gray ;
+    transition: all 200ms ease-in-out;
+}
+
+.navigation .tooltip {
+    visibility: hidden ;
+    position: absolute ;
+    display: flex ;
+    top: -40px ;
+    right: 28% ;
+    padding: 8px 25px ;
+    font-size: 16px ;
+    background: black ;
+    color: white ;
+    text-align: center ;
+    letter-spacing: 1px ;
+    border-radius: 4px ;
+    /*opacity: 1 ; Jugar con la opacidad*/
+}
+
+.navigation .tooltip::after {
+    content: '' ;
+    position: absolute ;
+    top: 100% ;
+    left: 50% ;
+    margin-left: -10px ;
+    border-width: 10px ;
+    border-style: solid ;
+    border-color: rgb(0, 0, 0) transparent transparent ;
+}
+
+/*----MAIN, CONTENT SECTION----*/
+main {
+    display: grid ;
+    justify-content: center ;
+    background: #eee ;
+}
+
+main .go-top {
+    display: none ;
+    justify-self: center ;
+    padding: 0.5em 1em ;
+    margin-bottom: 40px ;
+    background: transparent ;
+    border: 2px solid #aaa ;
+    border-radius: 4px ;
+}
+
+main .go-top:hover {
+    border: 2px solid gray ;
+}
+
+main .go-top a {
+    color: #aaa ;
+}
+
+main .go-top a:hover {
+    color: gray ;
+}
+
+.gallery {
+    display: grid ;
+    grid-template-columns: 25% 25% 25% ;
+    justify-content: center;
+    column-gap: 5rem ;
+    row-gap: 40px ;
+    margin: 90px 0 150px 0px ;
+}
+
+.gallery .marialuisa {
+    display: flex ;
+    justify-content: center ;
+    align-items: center;
+    height: 320px ;
+    width: 300px ;
+    overflow: hidden ;
+    transition: all 300ms ease-in-out ;
+}
+
+.gallery img {
+    cursor: pointer ;
+    width: 300px ;
+    box-shadow: 0 0 8px #6e6e6e ;
+    border-radius: 5px ;
+}
+
+.gallery .marialuisa:hover {
+    overflow: visible ;
+    transform: scale(1.05) ;
+}
+
+.gallery .marialuisa .paragraph {
+    position: relative ;
+    display: none ;
+    margin: 0.5rem 0 0 0.5rem ;
+    letter-spacing: 1px ;
+    z-index: 0 ;
+}
+
+
+/*----FOOTER SECTION----*/
+footer {
+    padding: 40px 0 40px 0 ;
+    display: flex ;
+    justify-content: center ;
+    letter-spacing: 1px ;
+    box-shadow: 0 -3px 3px #aaa ;
+}
+
+footer .legend {
+    font-size: 20px ;
+    padding: 0 10rem ;
+    align-self: center ;
+}
+
+footer .socials-footer {
+    display: grid ;
+    padding: 0 10rem ;
+    row-gap: 5px ;
+}
+
+.socials-footer a {
+    display: flex ;
+    color: black ;
+}
+
+.socials-footer a p {
+    margin-left: 5px ;
+}
+
+.socials-footer a:hover {
+    color: gray ;
+    transition: all 200ms ease-in-out;
+}
+
+.socials-footer img, ion-icon {
+    width: 14px ;
+    height: 14px ;
+    color: black ;
+    cursor: pointer ;
+    transition: all 100ms ease-in-out ;
+}
+
+
+/*----SLIDER----*/ 
+#cover {
+    display: none ;
+    position: fixed ;
+    justify-content: center ;
+    align-items: center ;
+    top: 0 ;
+    left: 0 ;
+    height: 100% ;
+    width: 100% ;
+    background: rgba(0, 0, 0, 0.7) ;
+    z-index: 100;
+}
+
+.slider {
+    display: none ;
+    height: 630px ;
+    width: 550px; 
+    background: transparent ;
+    border-radius: 7px ;
+    overflow: hidden ;
+    opacity: 1 ;
+    z-index: 200 ;
+}
+
+.carrousel {
+    display: flex ;
+    height: 100% ;
+    width: 2000% ;
+    border-radius: 7px ;
+    /*transform: translateX(-5%) ; PARA USO EN JS */
+}
+
+.carrousel div {
+    width: calc(100% / 20) ;
+    border-radius: 7px ;
+}
+
+.carrousel img {
+    height: 600px ;
+    border-radius: 7px ;
+}
+
+.description {
+    position: absolute ;
+    color: white ;
+    margin: 5px 0 0 10px ;
+    letter-spacing: 1px ;
+}
+
+.desc2 { /*--Descripción de imagen 2--*/
+    visibility: hidden ;
+}
+
+.btn-left {
+    position: absolute ;
+    top: 50% ;
+    left: 20px ;
+    padding: 30px 5px 25px 5px ;
+    border-radius: 7px ;
+    border: none ;
+    cursor: pointer ;
+}
+
+.btn-right {
+    position: absolute ;
+    top: 50% ;
+    right: 20px ;
+    padding: 30px 5px 25px 5px ;
+    border-radius: 7px ;
+    border: none ;
+    cursor: pointer ;
+}
+
+.btn-x {
+    position: absolute ;
+    font-size: 22px ;
+    background: none ;
+    border: none ;
+    color: #bbb ;
+    top: 20px ;
+    right: 20px ;
+    text-shadow: 0 0 10px white ;
+    cursor: pointer ;
+}
+
+.btn-x:hover {
+    text-shadow: none ;
+}
+
+.btn-left:hover, .btn-right:hover {
+    box-shadow:  0 0 5px #bbb ;
+    background: #ddd ;
+}
+

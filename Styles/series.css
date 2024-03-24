@@ -1,0 +1,132 @@
+* {
+    padding: 0 ;
+    margin: 0 ;
+    font-family: sans-serif ;
+    box-sizing: border-box ;
+}
+
+.container {
+    background: #eee ;
+}
+
+header {
+    padding: 40px 0 ;
+    background: white ;
+    text-align: center ;
+    margin-bottom: 30px ;
+    box-shadow: 0 3px 3px #aaa ;
+}
+
+main {
+    padding: 70px 0 0 0 ;
+    display: grid ;
+    row-gap: 80px ;
+    justify-content: center ;
+    letter-spacing: 1px ;
+    text-align: center ;
+}
+
+main h3 {
+    margin-bottom: 15px ;
+}
+
+main div img {
+    width: 250px ;
+    box-shadow: 0 0 10px gray ;
+    transition: all 200ms ease-in ;
+}
+
+main div img:hover {
+    box-shadow: none ;
+}
+
+p {
+    color: #aaa ;
+    margin: 100px 0 100px 0 ;
+    letter-spacing: 1px ;
+}
+
+.back {
+    margin-bottom: 50px ;
+    display: grid ;
+    justify-content: center ;
+}
+
+main .back .go-top{
+    color: #aaa ;
+    text-decoration: none ;
+    padding: 0.5em 1em ;
+    background: transparent ;
+    border: 2px solid #aaa ;
+    border-radius: 4px ;
+    transition: all 200ms ease-in ;
+    margin-bottom: 30px ;
+}
+
+main .back .go-top:hover {
+    border: 2px solid gray ;
+    color: gray ;
+}
+
+.back a{
+    color: #aaa ;
+    text-decoration: none ;
+    font-size: 14px ;
+    letter-spacing: 1px ;
+    transition: all 200ms ease-in ;
+}
+
+.back a:hover {
+    color: gray ;
+}
+
+footer {
+    display: grid ;
+    grid-template-columns: 50% 50% ;
+    padding: 60px 0 ;
+    background: white ;
+    box-shadow: 0 -3px 3px #aaa;
+    text-align: center ;
+    letter-spacing: 1px;
+}
+
+footer a {
+    text-decoration: none ;
+}
+
+.logo {
+    width: 20px ;
+    box-shadow: none ;
+    margin-left: 5px ;
+}
+
+.logo:hover {
+    transform: scale(1.1) ;
+}
+
+ion-icon {
+    font-size: 22px ;
+    color: black ;
+    margin-left: 5px ;
+}
+
+ion-icon:hover {
+    transform: scale(1.1) ;
+}
+
+
+/*----MEDIA QUERY----*/
+@media (max-width: 530px) {
+    footer {
+        grid-template-columns: 60% 40% ;
+    }
+}
+
+@media (max-width: 321px) {
+    header h1 {
+        font-size: 26px ;
+    }
+    footer {
+        grid-template-columns: 50% 50% ;
+    }
+}
