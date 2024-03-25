@@ -64,7 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
             form.reset() ; //Limpia los valores inscritos en el formulario
 
             document.querySelector('.sent-message').style.visibility = 'visible' ;
-            form.submit() ;
+            form.action="https://formspree.io/f/mayrpwbv" ;
+            form.method="POST" ;
             
             setTimeout(() => {
                 document.querySelector('.sent-message').style.visibility = 'hidden' ; //Cambiar a: visibility = 'visible' ;
