@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         //e.preventDefault() ;
 
         if (campos.name && campos.email && campos.subject && campos.message) {
-            form.reset() ; //Limpia los valores inscritos en el formulario
+            //form.reset() ; //Limpia los valores inscritos en el formulario
 
             document.querySelector('.sent-message').style.visibility = 'visible' ;
             setTimeout(() => {
