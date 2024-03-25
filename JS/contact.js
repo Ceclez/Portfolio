@@ -64,8 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             form.reset() ; //Limpia los valores inscritos en el formulario
 
             document.querySelector('.sent-message').style.visibility = 'visible' ;
-            form.action = "https://formsubmit.co/f/mayrpwbv" ;
-            form.method = "POST" ;
+            form.submit() ;
             
             setTimeout(() => {
                 document.querySelector('.sent-message').style.visibility = 'hidden' ; //Cambiar a: visibility = 'visible' ;
