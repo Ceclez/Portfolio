@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         name: /^[a-zA-ZÀ-ÿ\s]{3,50}$/ ,
         email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-.]+$/ ,
         subject: /^[a-zA-Z0-9\s\,\_\-]{4,100}$/ , 
-        message: /^[a-zA-Z0-9À-ÿ\s\?\¿\,]{4,400}$/ 
+        message: /^[a-zA-Z0-9À-ÿ\s\?\¿\.\,]{4,400}$/ 
     }
 
     const campos = { //Define en principio como falso a cada campo (input, en base al objecto "expressions")
@@ -75,12 +75,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }) ;
 }) ;
-
-//PENDIENTE VINCULAR UN BREVE "BACK-END"
-
-//const x = '5' ;
-//const result1 = x ;
-//const result2 = +x ;
-
-//console.log(typeof result1); //string
-//console.log(typeof result2); //number
