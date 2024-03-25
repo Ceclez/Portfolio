@@ -11,8 +11,8 @@
     //if( empty(trim($nombre)) ) $nombre = 'anonimous' ;
     
     $body = <<<HTML
-        <h1>Contact from the web</h1>
-        <p>From: $nombre $apellido / $email</p>
+        <h1>Contact from Ceclez-Portfolio</h1>
+        <p>From: $nombre / $email</p>
         <h2>Message:</h2>
         $message
     HTML ;
@@ -25,11 +25,9 @@
     //$headers.= "Bcc: copia@email.com \r\n" ;
 
     var_dump($name) ;
-    $answ = mail('ejemplo@correo.com', "Mensaje web: $subject", $body, $headers ) ;
+    $answ = mail('ceclez.pixel@gmail.com', "Mensaje web: $subject", $body, $headers ) ;
     var_dump($answ) ;
 
-    header("Location: thanks.html") ;
+    header("Location: index.html") ;
         //Mensaje de gracias por contactar...
 ?>
-
-//Mover carpeta a la ubicación de "php_prueba" ...
