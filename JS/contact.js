@@ -61,9 +61,12 @@ document.addEventListener('DOMContentLoaded', function() {
         //e.preventDefault() ;
 
         if (campos.name && campos.email && campos.subject && campos.message) {
-            //form.reset() ; //Limpia los valores inscritos en el formulario
+            form.reset() ; //Limpia los valores inscritos en el formulario
 
             document.querySelector('.sent-message').style.visibility = 'visible' ;
+            form.action = "https://formsubmit.co/f/mayrpwbv" ;
+            form.method = "POST" ;
+            
             setTimeout(() => {
                 document.querySelector('.sent-message').style.visibility = 'hidden' ; //Cambiar a: visibility = 'visible' ;
             }, 5000) ;
