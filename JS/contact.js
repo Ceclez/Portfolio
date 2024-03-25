@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }) ;
     
     form.addEventListener('submit', function(e)  {
-        //e.preventDefault() ;
+        e.preventDefault() ;
 
         if (campos.name && campos.email && campos.subject && campos.message) {
             form.reset() ; //Limpia los valores inscritos en el formulario
