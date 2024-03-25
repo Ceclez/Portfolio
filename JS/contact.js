@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
            
     }) ;
     
-    form.addEventListener('submit', function(e)  {
+    form.addEventListener('submit', function()  {
         e.preventDefault() ;
 
         if (campos.name && campos.email && campos.subject && campos.message) {
