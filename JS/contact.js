@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const validarFormulario = (e) => {
-        switch (e.target.id) {  //Selecciona el atributo "name" de cada input
+        switch (e.target.name) {  //Selecciona el atributo "name" de cada input
             case "name" :
                 validarCampo(expressions.name, e.target, name_error, 'name') ;
             break ;
