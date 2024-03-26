@@ -70,9 +70,11 @@ textarea:focus {
 }
 
 #submit {
-    width: 15% ;
+    width: 25% ;
     justify-self: center ;
-    margin-top: 30px ;
+    padding: 8px 0 ;
+    border-radius: 4px ;
+    margin-top: 50px ;
     text-align: center ;
     font-size: 14px ;
     border: 1px solid gray ;
@@ -86,7 +88,7 @@ textarea:focus {
 }
 
 .back {
-    margin-top: 1rem ;
+    margin-top: 2rem ;
     font-size: 14px ;
     display: flex;
     letter-spacing: 1px ;
@@ -112,8 +114,7 @@ a:hover {
     color: white ;
     padding: 10px 15px ;
     letter-spacing: 1px ;
-    bottom: 20px ;
-    animation: sent-message 200ms ;
+    bottom: 75px ;
 }
 
 .fill-out-fields {
@@ -125,5 +126,5 @@ a:hover {
     color: white ;
     padding: 10px 15px ;
     letter-spacing: 1px ;
-    bottom: 20px ;
+    bottom: 75px ;
 }
